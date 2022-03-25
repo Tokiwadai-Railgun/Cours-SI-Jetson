@@ -45,3 +45,35 @@ except KeyboardInterrupt: #  ... sauf si il y a une interruption clavier (ctrl +
     GPIO.output(ledPin_output, GPIO.LOW)
     GPIO.cleanup() # ... et on vide le cache de la carte
     print("Program : END")
+    
+    
+    
+    
+ # --<Version sans commentaires explicatifs >-- #
+
+# import des paquets nessessaires au fonctionnement du scipt
+import Jetson.GPIO as GPIO
+import time
+
+# initialisatio nde svariables d'environnement et configurations des sorties
+GPIO.setmode(GPIO.BOARD) # on dit au programme que l'on identifiras les pin de la carte via des chiffres
+ledPin_output = 7 # pour pouvoir s'y retrouver après dans le script on met un chiffre dans une variable, ce chiffre correpondras au pin de la carte (la syntawe d'une variable est important, dans ce cas précis elle n'est pas respecté mais on y reviendras plus tard
+GPIO.setup(ledPin_output, OUT) # ici on indique que le pin correspondant à la valeur de la variable (ici 7) seras une sortie (OUT)
+
+# programme principale
+try:
+    while 1:
+        print("Led : ON")
+        GPIO.output(ledPin_output, GPIO.HIGHT)
+
+        time.sleep(2)
+
+        print("Led : OFF")
+        GPIO.output(ledPin_output, GPIO.LOW) 
+
+        time.sleep(2)
+
+except KeyboardInterrupt:
+    GPIO.output(ledPin_output, GPIO.LOW)
+    GPIO.cleanup() 
+    print("Program : END")
