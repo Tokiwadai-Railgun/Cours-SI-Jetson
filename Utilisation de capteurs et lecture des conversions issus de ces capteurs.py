@@ -6,4 +6,8 @@ La raison est simple : Le Jetson Nano n'as pas de partie dédiée au traitement 
 (pour en savoir plus sur le fonctionnement de ce module, voir le site partie 2 vidéo "Expérience #3 : - Utiliser des capteurs analogiques via le port i2c" : https://www.sciences-ingenieur-f1.fr/premiere/sequence5/projet-sequence5/)
 
 
+
+
+
+
 """
