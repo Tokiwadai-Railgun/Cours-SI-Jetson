@@ -7,6 +7,9 @@ sudo chmod +x install.sh  ## --> ça permet de d'annoncer le fichier install.sh 
 
 ./install.sh ## --> execution du fichier install.sh 
 
+En cas de prolbème lors de l'installation faire --> git config --global proxy.http://172.16.0.1:3128
+
+
 **relancer terminal**
 
 nvm install node | nvm use node ## --> installation et utilisation de node 
