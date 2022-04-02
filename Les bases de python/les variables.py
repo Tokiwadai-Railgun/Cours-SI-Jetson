@@ -27,6 +27,9 @@ La seule chose à faire est de bien indiquer la valeur.
 étant donné que la valeur change en fonction du type de la variable le moyen d'indiquer la valeur change aussi, ainsi :
 """
 
+from asyncio.windows_events import NULL
+
+
 chaine_de_caractere = "bonjour" # --> variable de type string
 nombre_entier = 5 # --> variable de type int
 nombre_reel = 5.5 # --> variable de type float
@@ -43,3 +46,11 @@ de cette manière le contenue de "chaine_de_caractere" est passé de "bonjour" �
 """
 Vous avez du vous en rendre compte ici mais python est un language dit "sensible à la casse" c'est à dire que la moindre différence entre deux nom de variable les différencie ainsi, chaine_de_caractère est différent de chaine_de_caractere et de chaine_De_caractere.
 """
+
+"""
+Il est possible de définir plusieurs variables d'un coup : 
+cela permet un code plous compact mais moins lisible. On l'utilise alors majoritairement poru définir des variables vides (à valeur NULL)
+voici comment ça se présente
+"""
+
+var1, var2, var3 = "bonjour", "tout le monde", " ça va?"

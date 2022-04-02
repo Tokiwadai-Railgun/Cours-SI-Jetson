@@ -49,16 +49,16 @@ except KeyboardInterrupt: #  ... sauf si il y a une interruption clavier (ctrl +
     
     
     
- # --<Version sans commentaires explicatifs >-- #
+ # -- Version sans commentaires explicatifs --
 
 # import des paquets nessessaires au fonctionnement du scipt
 import Jetson.GPIO as GPIO
 import time
 
-# initialisatio nde svariables d'environnement et configurations des sorties
-GPIO.setmode(GPIO.BOARD) # on dit au programme que l'on identifiras les pin de la carte via des chiffres
-ledPin_output = 7 # pour pouvoir s'y retrouver après dans le script on met un chiffre dans une variable, ce chiffre correpondras au pin de la carte (la syntawe d'une variable est important, dans ce cas précis elle n'est pas respecté mais on y reviendras plus tard
-GPIO.setup(ledPin_output, OUT) # ici on indique que le pin correspondant à la valeur de la variable (ici 7) seras une sortie (OUT)
+# --< initialisation des svariables d'environnement et configurations des sorties >-- #
+GPIO.setmode(GPIO.BOARD) 
+ledPin_output = 7 
+GPIO.setup(ledPin_output, OUT) 
 
 # programme principale
 try:
