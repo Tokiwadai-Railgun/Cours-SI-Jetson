@@ -9,3 +9,4 @@ les fichiers python seront composés de deux programmes indentiques au lencement
 
 
 (pour l'instant toutes les vidéos ne s'y trouve pas, elles seront ajoutés au fur et à mesure)
+
