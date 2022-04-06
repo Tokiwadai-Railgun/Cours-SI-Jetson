@@ -37,7 +37,7 @@ import time
 smbus = smbus.SMBus(1) # ici on définis le bus i2c à utiliser
 
 adress = 0x48 # ici on définis l'adresse du composant I2C
-value = smbus.read(adress, 1) # ici on lis la valeur de la photoresistance qu iest sur le port 1, le 10 indique que l'on veut lire 10 valeurs.
+value = smbus.read_i2c_block_data(adress, 1) # ici on lis la valeur de la photoresistance qu iest sur le port 1, le 10 indique que l'on veut lire 10 valeurs.
 
 print(value)
 
@@ -49,7 +49,7 @@ import time
 smbus = smbus.SMBus(1)
 
 adress = 0x48
-value = smbus.read(adress, 1) 
+value = smbus.read_i2c_block_data(adress, 1) 
 
 print(value)
 
